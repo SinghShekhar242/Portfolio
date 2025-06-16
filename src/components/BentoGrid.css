@@ -1,0 +1,89 @@
+
+.bento-grid-container {
+    padding: 0;
+}
+
+.bento-grid {
+    display: grid;
+    gap: var(--gap);
+    width: 100%;
+    padding: var(--gap);
+
+    
+    grid-template-columns: repeat(6, 1fr);
+
+    
+    grid-template-rows:
+        280px 
+        280px 
+        auto 
+        auto; 
+
+    grid-template-areas:
+        "about-me-grid about-me-grid hero-image-grid hero-image-grid work-grid work-grid"
+        "skills-grid skills-grid contact-grid contact-grid work-grid work-grid"
+        ". . . . . ."
+        "social-bar-grid social-bar-grid social-bar-grid social-bar-grid social-bar-grid social-bar-grid";
+
+    
+}
+
+
+#about-me-grid { grid-area: about-me-grid; }
+#hero-image-grid { grid-area: hero-image-grid; }
+#work-grid { grid-area: work-grid; }
+#skills-grid { grid-area: skills-grid; }
+#contact-grid { grid-area: contact-grid; }
+#social-bar-grid { grid-area: social-bar-grid; }
+
+
+
+@media (max-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        height: auto;
+        padding: 1.5rem;
+
+        grid-template-areas:
+            "hero-image-grid hero-image-grid"
+            "work-grid work-grid"
+            "about-me-grid about-me-grid"
+            "skills-grid contact-grid"
+            "social-bar-grid social-bar-grid";
+
+        .bento-item--hero-image-grid {
+            aspect-ratio: 16 / 9;
+            max-height: 300px;
+        }
+    }
+    .bento-grid > .bento-item, .bento-grid > .project-list-card {
+        grid-area: unset !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; 
+        height: auto;
+        padding: 1rem;
+
+        grid-template-areas:
+            "hero-image-grid"
+            "work-grid"
+            "about-me-grid"
+            "skills-grid"
+            "contact-grid"
+            "social-bar-grid";
+
+        .bento-item--hero-image-grid {
+            aspect-ratio: 4 / 3;
+            max-height: 250px;
+        }
+    }
+    .bento-grid > .bento-item, .bento-grid > .project-list-card {
+        grid-area: unset !important;
+    }
+}

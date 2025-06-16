@@ -1,0 +1,137 @@
+.project-list-card {
+    
+    grid-area: work-grid;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    gap: 0.8rem;
+    overflow: hidden;
+    padding: 1.5rem;
+}
+
+.project-showcase-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 0.5rem 0; 
+    position: relative; 
+}
+
+
+.featured-project-image {
+    max-width: 95%;
+    max-height: 160px; 
+    object-fit: contain;
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.featured-project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.featured-project-name {
+    font-size: 1.5rem; 
+    color: var(--primary-color);
+    margin-bottom: 0.4rem; 
+    line-height: 1.2; 
+}
+
+.featured-project-description {
+    font-size: 0.9rem;
+    color: var(--light-text-color);
+    margin-bottom: 0.6rem; 
+
+    
+    max-height: 80px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+
+.featured-project-link {
+    font-weight: bold;
+    color: var(--accent-color);
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0.5rem; 
+    font-size: 0.95rem; 
+}
+
+.other-projects-heading {
+    font-size: 1rem;
+    color: var(--light-text-color);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    padding-left: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+
+.project-list-scroll-area {
+    max-height: 200px; 
+    overflow-y: auto; 
+    padding-right: 5px; 
+    flex-shrink: 0; 
+}
+
+
+.project-list-scroll-area::-webkit-scrollbar {
+    width: 8px;
+}
+
+.project-list-scroll-area::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.project-list-scroll-area::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 10px;
+}
+
+.project-list-scroll-area::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-list-item {
+    font-size: 1.05rem;
+    padding: 0.6rem 0.5rem;
+    cursor: pointer;
+    color: var(--light-text-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 8px;
+    margin-bottom: 0.2rem;
+}
+
+.project-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--primary-color);
+}
+
+.project-list-item.active {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+.project-list-item.active:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
