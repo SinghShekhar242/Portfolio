@@ -5,17 +5,17 @@ export const initialFeaturedProjectId = 'proj1';
 export const projects = [
     {
         id: 'proj1',
-        name: 'E-commerce Redesign',
-        image: '/images/projects/project1.jpg', 
-        description: 'A complete UI/UX overhaul for a modern online retail platform, focusing on conversion rates and user satisfaction. This project involved extensive user research, wireframing, and high-fidelity prototyping.',
-        url: 'https://example.com/project/ecommerce-redesign'
+        name: 'Zomato Clone',
+        image: '/images/projects/zomato.jpg', 
+        description: 'A full-stack Zomato clone enabling seamless food discovery, restaurant Browse, and order placement with intuitive UI/UX.',
+        url: 'https://github.com/SinghShekhar242/Zomato'
     },
     {
         id: 'proj2',
-        name: 'SaaS Dashboard Dev',
-        image: 'https://via.placeholder.com/800x600/8B5E3C/F8F5EE?text=SaaS+Dashboard+Dev',
-        description: 'Developed a responsive and interactive dashboard for a B2B SaaS application using React, Redux, and D3.js for data visualization. Improved data accessibility and user engagement by 30%.',
-        url: 'https://example.com/project/saas-dashboard'
+        name: 'Cynthia Website',
+        image: '/images/projects/cynthia.jpg',
+        description: 'A dynamic, animated website clone of a product designers portfolio, built to master GSAP, intricate animations, and custom cursor effects.',
+        url: 'https://github.com/SinghShekhar242/Cynthia-website'
     },
     {
         id: 'proj3',

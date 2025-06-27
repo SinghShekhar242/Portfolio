@@ -40,9 +40,9 @@ function BentoItem({ title, description, image, link, type, id }) {
     if (type === "social-bar-grid") {
       return (
         <div className="social-links-container">
-          <a href="https://www.figma.com/@YOUR_FIGMA_USERNAME" target="_blank" rel="noopener noreferrer">Figma</a>
-          <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="www.linkedin.com/in/shekhar-singh-6b0b93282" target="_blank" rel="noopener noreferrer">Linkedin</a>
+          <a href="https://github.com/SinghShekhar242" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/_shekhar_singh_9/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
       );
     }

@@ -9,7 +9,7 @@ function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
     >
-      <a href="#top" className="navbar-logo">[Your Initials]</a>
+      <a href="#top" className="navbar-logo">Singh Shekhar</a>
       
     </motion.nav>
   );
